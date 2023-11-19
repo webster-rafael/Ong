@@ -1,0 +1,301 @@
+@font-face
+{
+    font-family: 'Cabold comic demo';
+    src: url(./fonts/Cabold\ Comic\ demo.otf) format('truetype');
+}
+
+
+:root
+{
+
+    --background-header:#ffffff;
+    --cor-nav:#e3c992;
+    --background-color: rgb(34,193,195);
+    --background-linear: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(241,200,82,1) 53%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body
+{
+    background: var(--background-linear);
+    height: 100vh; 
+}
+
+.main
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header-1
+{
+    width: 30%;
+    height: 60px;
+    background-color: var(--background-header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.header-2
+{
+    width: 30%;
+    height: 60px;
+    background-color: var(--background-header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;   
+}
+    
+header
+{
+    margin-top: 2%;       
+}
+
+.logo__svg
+{
+    margin-top: 1%;
+    border-radius: 50%;   
+}
+
+.logo__svg img
+{
+    width: 10vw;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.header-1::before 
+{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid #f1c852;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.header-2::before
+{
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 20px solid #f1c852;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    
+}
+
+nav a 
+{
+    color: var(--cor-nav);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.0vw;
+    
+} 
+
+ul 
+{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+ul li
+{
+    text-align: center;
+    margin: auto 1vw;
+    gap: 5px;
+    text-transform: uppercase;
+    
+}
+
+li
+{
+    color: #8e5620;
+}
+
+nav a:hover
+{
+    color: #8e5620;
+    transition: .5s;
+}
+
+.titulo{
+  margin: auto ;
+
+}
+
+.titulo h1
+{
+    color: white;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.352);
+    text-transform: uppercase;
+    line-height: 2vw;
+    font-size: 2vw;
+    font-family: 'DynaPuff', serif;
+
+}
+
+.titulo span {
+    font-size: 6.9vw;
+    line-height: 6.5vw;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.537);
+    font-family: 'DynaPuff', serif;
+    
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.interface
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 77vh;
+    margin: auto;   
+}
+.banner__dog
+{
+    text-align: center;
+    margin: auto; 
+}
+
+.banner__dog img
+{
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    transform: translate(-50%);
+}
+
+.icons
+{
+    font-size: 5.8vw;
+    gap: 2.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+}
+
+.custom-shape-divider-bottom-1700353594 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1700353594 svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 126px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1700353594 .shape-fill {
+    fill:rgba(241,200,82,1);
+}
+
+/* ======== SOBRE ============ */
+
+.sobre
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-nav);
+    
+}
+
+.image-sobre img
+{
+    max-width: 350px;
+    animation: float 3s ease-in-out infinite; 
+    margin-left: 45px;
+    align-self: center;
+}
+.sobre-titulo {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre-titulo h1 {
+    font-size: 2.5vw;
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+}
+
+.sobre-titulo p {
+    width: 60%;
+    font-size: 1.4vw;
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.sobre-titulo a {
+    font-size: 2.5vw;
+    margin-top: 40px;
+    display: inline;
+    color: #8e5620;
+    transition: transform 0.3s ease;
+}
+
+.sobre-titulo a:hover
+{
+    transform: scale(1.2);
+}
+
+
+
+   
+
+@keyframes float 
+{
+    0%, 100%
+    {
+        transform: translateY(10px);
+    }
+    50% 
+    {
+        transform: translateY(-30px);
+    }
+}
+
+
+
